@@ -1,0 +1,63 @@
+{
+    "link": "https://www.typescriptlang.org/docs/handbook/compiler-options.html",
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "es7"
+        ],
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "strict": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": false,
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ],
+            "@auth/*": [
+                "./src/auth/*"
+            ],
+            "@certificate/*": [
+                "./src/certificate/*"
+            ],
+            "@model/*": [
+                "./src/model/*"
+            ],
+            "@mongo/*": [
+                "./src/mongo/*"
+            ],
+            "@order/*": [
+                "./src/order/*"
+            ],
+            "@organization/*": [
+                "./src/organization/*"
+            ],
+            "@user/*": [
+                "./src/user/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ],
+        }
+    },
+    "include": [
+        "src",
+        "types"
+    ],
+    "plugins": [
+        {
+            "name": "typescript-styled-plugin"
+        }
+    ]
+}
